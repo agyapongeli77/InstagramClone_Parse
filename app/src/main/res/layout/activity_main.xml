@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="1dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/toolbar_ig_camera_image"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/instagram_camera_icon"/>
+
+        <ImageView
+            android:id="@+id/toolbar_ig_text_image"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/instagram_text_icon"/>
+
+
+        <ImageView
+            android:id="@+id/toolbar_ig_direct_image"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="160dp"
+            android:src="@drawable/instagram_direct_image"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ivPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        tools:srcCompat="@tools:sample/avatars[4]" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Write a caption"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/log_in_button_background"
+        android:text="Submit"/>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

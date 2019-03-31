@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineSpotShadowColor="@android:color/black"
+    android:outlineAmbientShadowColor="@android:color/black"
+    android:layout_margin="8dp"
+    android:elevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_nav_background"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivUserProfileImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tvHandle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/ivUserProfileImage"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="elija" />
+
+        <ImageView
+            android:id="@+id/more_image_view"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_above="@id/ivImage"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ufi_more" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/tvHandle"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[14]" />
+
+        <ImageView
+            android:id="@+id/like_image_view"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/ivImage"
+            android:background="@drawable/like_icon_item_color_state" />
+
+        <ImageView
+            android:id="@+id/comment_image_view"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/ivImage"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/like_image_view"
+            android:src="@drawable/ufi_comment" />
+
+        <ImageView
+            android:id="@+id/direct_image_view"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_below="@id/ivImage"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/comment_image_view"
+            android:src="@drawable/ufi_new_direct" />
+
+        <ImageView
+            android:id="@+id/save_image_view"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/ivImage"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ufi_save" />
+
+        <TextView
+            android:id="@+id/tvLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/direct_image_view"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="likes" />
+
+        <TextView
+            android:id="@+id/tvHandleBesideCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLikes"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="user's Handle beside the caption text" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLikes"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tvHandleBesideCaption"
+            android:textColor="@android:color/black"
+            tools:text="Description text" />
+
+        x
+
+        <TextView
+            android:id="@+id/tvTimeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDescription"
+            tools:text="Timestamp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -29,9 +29,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // hides the status bar on just this activity
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // hides status bar on Log in screen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         // sets content view
         setContentView(R.layout.activity_login);
@@ -111,4 +110,6 @@ public class LoginActivity extends AppCompatActivity {
         finish();
 
     }
+
+
 }

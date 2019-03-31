@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_details_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/toolbar_ig_camera_image"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:src="@drawable/back_icon"
+            android:onClick="backToStreamScreen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textSize="22dp"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-medium" />
+
+
+        <ImageView
+            android:id="@+id/toolbar_ig_direct_image"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="170dp"
+            android:src="@drawable/instagram_direct_image"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ivUserProfileImage_detail_activity"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/toolbar_details_activity"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/tvHandle_detail_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivUserProfileImage_detail_activity"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="7dp"
+        android:textSize="18dp"
+        android:layout_below="@id/toolbar_details_activity"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:text="elija" />
+
+    <TextView
+        android:id="@+id/tvDescription_detail_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/toolbar_details_activity"
+        android:layout_toRightOf="@id/tvHandle_detail_activity"
+        android:layout_marginBottom="5dp"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="6dp"
+        tools:text="Description text" />
+
+    <TextView
+        android:id="@+id/tvCreationTime_detail_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDescription_detail_activity"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        tools:text="Creation Time" />
+
+    <EditText
+        android:id="@+id/comment_text_view_detail_activity"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Comment"
+        android:layout_alignParentBottom="true"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/post_comment_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="Post"
+        android:textColor="#0099ff"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/comment_text_view_detail_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp" />
+
+
+</RelativeLayout>

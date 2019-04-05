@@ -25,7 +25,7 @@ The following **additional** features are implemented:
 
 - [x] Added a cardview to each post
 - [x] Just like real instagram, Like icon changes to red when user taps on it
-- [x] Just like real instagram, if there are no "likes" the view is hidded from the user
+- [x] Just like real instagram, if there are no "likes" the view is hidden from the user
 - [x] Added a circular view to profile pictures
 
 
